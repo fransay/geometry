@@ -19,8 +19,10 @@ by the Nile.
 
 **linestring** : A linestring is a one-dimensional object representing a sequence of points
 and the line segment connecting them.
+
 ![linestring](https://spin.atomicobject.com/wp-content/uploads/Screen-Shot-2020-08-16-at-10.52.17-AM-590x224.png)
 
 
 **linearRing** : linearRing is a linestring which is both simple and closed
-![LinearRing](https://i.stack.imgur.com/R8Myi.png)
+
+![LinearRing](https://i.stack.imgur.com/7iHq8.png)
