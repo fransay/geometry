@@ -25,13 +25,19 @@ class linestring(object):
             return total_length
 
 
-    def area(self, shape):
+    def area(self):
         """a line string in space has no area"""
         return None
 
-
     def centriod(self):
-        """centroid of a line segment can be considered as  the midpoint of the line"""
+        """centroid of a line segment can be considered as the midpoint of the line"""
+        firstStation = self.points[0]
+        lastStation = self.points[len(self.points) - 1]
+        # the midpoint between the terminal points can be considered as the centroid of the linestring
+        x = firstStation[0] + lastStation[0]
+        y = firstStation[1] + lastStation[1]
+        midpoint = (x/2, y/2)
+        return f"MIDPOINT: {midpoint}"
 
     def str(self):
         """WKT string version"""
@@ -41,3 +47,4 @@ class linestring(object):
 if __name__ == '__main__':
     linestring_one = linestring([1, 2], [2, 4])
     print(linestring_one.length())
+    print(linestring_one.centriod())
