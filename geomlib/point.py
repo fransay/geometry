@@ -29,4 +29,4 @@ class point(geom):
 
 if __name__ == '__main__':
     point_one = point(1, 2)
-    print("area--->", point_one.area('square') ,"<--->>>length:", point_one.length())
+    print("area--->", point_one.area('square'), "<--->>>length:", point_one.length())
