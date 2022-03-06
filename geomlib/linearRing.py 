@@ -28,8 +28,7 @@ class linearRing(object):
 
         sumForwardPassResults, sumBackwardPassResults = 0, 0
         for x in range(len_of_points - 1):
-            index_one = self.points[b][1]
-            index_two = self.points[u][0]
+            index_one, index_two = self.points[b][1], self.points[u][0]
             index_three = self.points[b][0]
             index_four = self.points[u][1]
 
