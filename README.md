@@ -28,3 +28,8 @@ this means the first point is the last point.
 
 ![LinearRing](https://i.stack.imgur.com/7iHq8.png)
 
+
+**polygon** : A polygon is a plane figure, that is described by a finite number of straight line segment connected to form a close polygonal chain.
+The bounded plane region maybe called a polygon.
+![](https://mathemania.com/wp-content/uploads/2015/07/n-sided-polygon.png)
+
