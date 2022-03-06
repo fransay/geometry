@@ -1,4 +1,4 @@
-# polygonal chain consist of a series of node(s) or point stn(s)
+# A linestring is also known as a polygonal chain and it consists of a series of node(s) or point stn(s)
 
 import math
 
@@ -6,7 +6,6 @@ import math
 class linestring(object):
     def __init__(self, *points: list):
         self.points = points
-
 
     def length(self):
         """the length of a linestring is the sum total of the individual line segments making up the string"""
@@ -41,7 +40,7 @@ class linestring(object):
 
     def str(self):
         """WKT string version"""
-        pass
+        return f"LINESTRING POINTS: {self.points}"
 
 
 if __name__ == '__main__':

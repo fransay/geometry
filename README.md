@@ -23,6 +23,7 @@ and the line segment connecting them.
 ![linestring](https://spin.atomicobject.com/wp-content/uploads/Screen-Shot-2020-08-16-at-10.52.17-AM-590x224.png)
 
 
-**linearRing** : linearRing is a linestring which is both simple and closed
+**linearRing** : linearRing is a linestring which is both simple and closed. It is a list of points in a ring. 
+this means the first point is the last point.
 
 ![LinearRing](https://i.stack.imgur.com/7iHq8.png)
