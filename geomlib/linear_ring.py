@@ -44,7 +44,12 @@ class linearRing(object):
 
 
     def centriod(self):
-        pass
+        """centriod also known as geometric center is the arithmetic mean position
+        of all the points in the plane figure. the barycenter in geometry is also another
+        name of the centriod...source {https://en.wikipedia.org/wiki/Centroid}
+        """
+
+
 
 
     def __str__(self):
@@ -53,7 +58,7 @@ class linearRing(object):
 
 
 if __name__ == '__main__':
-    linearRingOne = linearRing([1, 2], [3, 4], [5, 6], [7, 8], [26, 565])
+    linearRingOne = linearRing([100, 200], [300, 400], [500, 600], [700, 800], [900, 1000])
     print(linearRingOne.area())
 
 

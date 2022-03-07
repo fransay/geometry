@@ -37,3 +37,8 @@ The points where two edges meet are called the polygon vertices.
 
 ## Properties of Geometry
 
+
+
+
+
+
