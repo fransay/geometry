@@ -60,23 +60,13 @@ class linearRing(object):
 
 
 
-
-
-
-
-
-
-
-
-
-
     def __str__(self):
         """WKR string representation"""
         pass
 
 
 if __name__ == '__main__':
-    linearRingOne = linearRing([100, 200], [300, 400], [500, 600], [700, 800], [900, 1000])
+    linearRingOne = linearRing([100, 200], [309990, 40670], [500, 600], [70770, 866500], [900, 106600])
     print(linearRingOne.area())
     print(linearRingOne.centriod())
 
