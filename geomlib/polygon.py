@@ -1,4 +1,4 @@
-from geomlib.geom import geom
+
 from linear_ring import linearRing
 
 
@@ -24,12 +24,6 @@ class polygon(linearRing):
         """WKR string representation"""
 
         return linearRing.__str__(self)
-
-    # Unfinished and there is more to add!!!!
-    # {
-
-
-    # }
 
 
 
