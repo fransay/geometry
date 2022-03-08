@@ -59,7 +59,7 @@ class linearRing(object):
 
     def __str__(self):
         """WKR string representation"""
-        pass
+        return f"POINTS : {self.points}"
 
 
 if __name__ == '__main__':
