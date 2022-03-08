@@ -53,10 +53,7 @@ class linearRing(object):
         for m in self.points:
             x_collection.append(m[0])
             y_collection.append(m[1])
-
         return f" Centroid : {sum(x_collection)/len(x_collection), sum(y_collection)/len(y_collection)}"
-
-
 
 
 
