@@ -1,21 +1,32 @@
-
 from geomlib.geom import geom
+from linear_ring import linearRing
 
 
-class polygon(geom):
-    def __init__(self, x, y):
-        super().__init__(x, y)
-
+class polygon(linearRing):
+    def __init__(self, *points):
+        super().__init__(*points)
 
     def length(self):
-        pass
-
+        """the length of a polygon must be similar or the same as that of linearRing """
+        return linearRing.length()
 
     def area(self):
-        pass
+        """the length of a polygon must be similar or the same as that of linearRing """
+
+        return linearRing.area()
 
     def centriod(self):
-        pass
+        """the length of a polygon must be similar or the same as that of linearRing """
+
+        return linearRing.centriod()
 
     def __str__(self):
-        return f""
+        """WKR string representation"""
+
+        return linearRing.__str__()
+
+    # Unfinished and there is more to add!!!!
+    # {
+
+    
+    # }

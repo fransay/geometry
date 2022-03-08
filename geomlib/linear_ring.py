@@ -63,7 +63,7 @@ class linearRing(object):
 
 
 if __name__ == '__main__':
-    linearRingOne = linearRing([100, 200], [309990, 40670], [500, 600], [70770, 866500], [900, 106600])
+    linearRingOne = linearRing([105450.54544, 203404545], [309450, 40670], [5056550, 600], [707570, 866500], [900, 10600])
     print(linearRingOne.area())
     print(linearRingOne.centriod())
 
