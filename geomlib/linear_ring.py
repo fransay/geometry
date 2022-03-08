@@ -39,15 +39,33 @@ class linearRing(object):
             b, u = u, u + 1
 
         areaOfLinearRing = (sumForwardPassResults - sumBackwardPassResults) / 2
-        
         return abs(areaOfLinearRing)
 
 
     def centriod(self):
+
         """centriod also known as geometric center is the arithmetic mean position
         of all the points in the plane figure. the barycenter in geometry is also another
         name of the centriod...source {https://en.wikipedia.org/wiki/Centroid}
         """
+
+        x_collection, y_collection = [], []
+        for m in self.points:
+            x_collection.append(m[0])
+            y_collection.append(m[1])
+
+        return f" Centroid : {sum(x_collection)/len(x_collection), sum(y_collection)/len(y_collection)}"
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -60,6 +78,7 @@ class linearRing(object):
 if __name__ == '__main__':
     linearRingOne = linearRing([100, 200], [300, 400], [500, 600], [700, 800], [900, 1000])
     print(linearRingOne.area())
+    print(linearRingOne.centriod())
 
 
 
