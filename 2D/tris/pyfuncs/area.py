@@ -19,7 +19,7 @@ def area_sides(stn1: tuple, stn2: tuple, stn3: tuple):
         s = m.mean(leng_of_side1, leng_of_side2, leng_of_side3)
         area_result = sq(s * (s - leng_of_side1) * (s - leng_of_side2) * (s-leng_of_side3))
     except ValueError:
-        return "Undefined operation"
+        return "undefined operation"
     return abs(area_result)
 
 
