@@ -1,6 +1,6 @@
 from distance import distance as d
 from statfuncs import mean as m
-from math import sqrt as sq
+from math import sqrt as sq, sin
 
 
 def area_shoelace(stn1: tuple, stn2: tuple, stn3: tuple):
@@ -19,10 +19,21 @@ def area_sides(stn1: tuple, stn2: tuple, stn3: tuple):
         s = m.mean(leng_of_side1, leng_of_side2, leng_of_side3)
         area_result = sq(s * (s - leng_of_side1) * (s - leng_of_side2) * (s-leng_of_side3))
     except ValueError:
-        return "Unable to return undefined results by sides algorithm"
+        return "Undefined operation"
     return abs(area_result)
 
 
-print(area_shoelace((11, 25), (3, 48), (45, 66)))
+def area_dim(base, height):
+    """return area value when dimensions of a tri-shape are given"""
+    return 0.5 * base * height
+
+
+def area_angle(angle, length1, length2):
+    """return area value when an angle and the length of adjacent lines are given"""
+
+    return 0.5 * length1 * length2 * sin(angle)
+
+
+
 
 

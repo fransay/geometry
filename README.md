@@ -7,7 +7,7 @@ geometry began with Egyptian surveyors of two or three
 > millennia ago measuring the Earth, or at least the fertile expanse of it that was annually flooded
 by the Nile.
 ## Objects In Geometry
-**Points** : points are fundamental for building geometry. Every geometric shape is defined as a set of points
+**Points** : Points are fundamental for building geometry. Every geometric shape is defined as a set of points
 ; this is not the case in synthetic geometry, where a line is another fundamental object that is not viewed as the set of the points through which it passes!
 , points are primal in geometric objects.
 
