@@ -5,7 +5,9 @@ from math import sqrt as sq
 
 def area_shoelace(stn1: tuple, stn2: tuple, stn3: tuple):
     """return area result of triangle, employing the shoelace algorithm"""
-    pass
+    f_run = (stn1[0]*stn2[1]) + (stn2[0]*stn3[1]) + (stn3[0]*stn1[1])
+    b_run = (stn1[1]*stn2[0]) + (stn2[1]*stn3[0]) + (stn3[1]*stn1[0])
+    return abs((f_run-b_run) / 2)
 
 
 def area_sides(stn1: tuple, stn2: tuple, stn3: tuple):
@@ -18,7 +20,9 @@ def area_sides(stn1: tuple, stn2: tuple, stn3: tuple):
         area_result = sq(s * (s - leng_of_side1) * (s - leng_of_side2) * (s-leng_of_side3))
     except ValueError:
         return "Unable to return undefined results by sides algorithm"
-    return area_result
+    return abs(area_result)
 
+
+print(area_shoelace((11, 25), (3, 48), (45, 66)))
 
 
