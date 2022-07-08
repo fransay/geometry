@@ -21,4 +21,4 @@ def area_sides(stn1: tuple, stn2: tuple, stn3: tuple):
     return area_result
 
 
-print(area_sides((176, 244), (42, 4), (45, 64)))
+
