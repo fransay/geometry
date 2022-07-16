@@ -16,14 +16,14 @@ def angles(stn1: tuple, stn2: tuple, stn3: tuple):
 
     # angle formed at stn2
     """
-        determine bearing from stn2 to stn1 and bearing from stn2 to stn3,
-        return the difference in bearing as the angle formed at stn1
+    determine bearing from stn2 to stn1 and bearing from stn2 to stn3,
+    return the difference in bearing as the angle formed at stn1
     """
     # angle formed at stn3
     angle_stn2 = bearing(stn2, stn1) - bearing(stn2, stn3)
     """
-        determine bearing from stn3 to stn1 and bearing from stn3 to stn2,
-        return the difference in bearing as the angle formed at stn1
+    determine bearing from stn3 to stn1 and bearing from stn3 to stn2,
+    return the difference in bearing as the angle formed at stn1
     """
 
     angle_stn3 = bearing(stn3, stn1) - bearing(stn3, stn2)
