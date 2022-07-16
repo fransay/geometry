@@ -31,5 +31,3 @@ def angles(stn1: tuple, stn2: tuple, stn3: tuple):
            f'Angle of station 3= {angle_stn3}'
 
 
-if __name__ == '__main__':
-    print(angles((56, 7), (9, 5), (3, 6)))
