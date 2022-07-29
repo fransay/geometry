@@ -10,7 +10,3 @@ def perimeter(stn1, stn2, stn3, stn4):
 
     return distance(stn1, stn2) + distance(stn2, stn3) + distance(stn3, stn4) + distance(stn1, stn4)
 
-
-
-if __name__ == '__main__':
-    print(perimeter([200, 893], [43, 6], [47, 7], [6, 8]))
